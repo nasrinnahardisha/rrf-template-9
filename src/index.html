@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRF-Template-9 || Home</title>
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
@@ -16,11 +17,11 @@
 <body>
 
 
-    <header class="bg-[#FFD4D0] pt-8 px-7">
+    <header class="bg-[#FFD4D0] pt-10 px-7 relative">
         <nav>
             <div class="container">
 
-                <div class="circle  bg-[#FC3314] w-[146px] h-[146px] rounded-full"></div>
+                <div class="circle absolute bg-[#FC3314] w-[146px] h-[146px]"></div>
                 <div class="flex items-center justify-between">
 
                     <div class="nav__bar  flex justify-between items-center">
@@ -31,33 +32,43 @@
                             <i class="ri-menu-line"></i>
                         </div>
                     </div>
-                    <ul class="nav__links flex " id="nav-links">
-                        <li><a href="#about" class="text-black font-bold text-[18px] pl-6">About</a></li>
-                        <li><a href="#services" class="text-black font-bold text-[18px] pl-6">Services</a></li>
-                        <li><a href="#portfolio" class="text-black font-bold text-[18px] pl-6">Portfolio</a></li>
-                        <li><a href="#design" class="text-black font-bold text-[18px] pl-6">Blog</a></li>
-                    </ul>
-                    <a href="#"><button class="bg-black btn font-bold text-[16px] text-white w-[127px] h-[48px]">Let’s
-                            Talk</button></a>
+                    <div class="w-[360px]">
+                        <ul class="nav__links flex  gap-[32px] items-center leading-[130%]" id="nav-links">
+                            <li><a href="#about" class="text-black font-bold text-[18px]">About</a></li>
+                            <li><a href="#services" class="text-black font-bold text-[18px]">Services</a></li>
+                            <li><a href="#portfolio" class="text-black font-bold text-[18px]">Portfolio</a></li>
+                            <li><a href="#design" class="text-black font-bold text-[18px]">Blog</a></li>
+                        </ul>
+                    </div>
+                    <a href="#"
+                        class="bg-black btn font-bold text-[16px] text-white w-[127px] h-[48px] px-6 py-3 leading-[130%] flex  items-center justify-center">Let’s
+                        Talk </a>
                 </div>
             </div>
         </nav>
     </header>
 
 
-    <section id="hero" class="bg-[#FFD4D0] px-7 mt-[-1px]">
-        <div class="container">
-            <div class="hero  items-center flex flex-col md:flex-row justify-between md:gap-[48px]">
-                <div class="flex flex-col w-full md:w-5/12 py-12">
-                    <h3 class="mb-4">UX Designer</h3>
-                    <h1 class="text-3xl sm:text-5xl  md:text-4xl lg:text-[56px] xl:text-[64px] font-bold">Hi There, I’m
-                        <br>
-                        <span class="text-[#FC3314]">John Smith</span>
-                    </h1>
-                    <p class="mt-4">Welcome to my portfolio of captivating digital <br>experiences. Explore my work and
-                        let's create
-                        something extraordinary together.</p>
-                    <div class="hero-btn flex gap-[20px] lg:mt-12 md:mt-8 mt-6 sm:flex-row ">
+    <section id="hero" class="bg-[#FFD4D0] h-[550px] px-7">
+        <div class="container pt-[32px]">
+            <div class="hero  items-center  h-[518px] flex flex-col md:flex-row justify-between md:gap-[15px]">
+                <div class="text flex flex-col w-full md:w-5/12 pt-[64px] pb-[80px] lg:gap-[48px] md:gap-[32px]">
+                    <div class="w-[457px] h-[278px]">
+                        <h4 class="pb-4 text-[#1f1f1f] font-normal text-[20px] leading-[150%]">UX Designer</h4>
+                        <h2
+                            class="text-3xl text-[#1f1f1f] leading-[150%] sm:text-[40px]  md:text-4xl lg:text-[40px] xl:text-[48px] font-bold">
+                            Hi
+                            There, I’m
+                            <br>
+                            <span class="text-[#FC3314]">John Smith</span>
+                        </h2>
+                        <p class="pt-4 text-[#1f1f1f] font-normal text-[16px] leading-[150%]">Welcome to my portfolio of
+                            captivating digital <br>experiences. Explore my work
+                            and
+                            let's create
+                            something extraordinary together.</p>
+                    </div>
+                    <div class="hero-btn flex gap-[20px]  sm:flex-row ">
                         <a href="#"
                             class="w-[177px] h-[48px] flex items-center justify-center bg-black text-white font-bold">Hire
                             Me</a>
@@ -65,279 +76,396 @@
                             class="w-[177px] h-[48px] flex items-center justify-center border border-black text-black font-bold ">Portfolio</a>
                     </div>
                 </div>
-                <div class="hero__image w-full md:w-7/12 img md:mt-[30px] mb-0 flex justify-center self-end">
-                    <img src="../assets/hero.png" alt="image">
+                <div class="hero__image  md:w-7/12 img md:mt-[30px]  flex justify-center self-end ">
+                    <img src="../assets/hero.png" class="w-[687px] h-[487px] object-cover mt-[1px]" alt="image">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="md:pt-16 pt-12 px-7  text-center bg-[#1F1F1F] text-white">
+    <section id="about" class="md:pt-16 pt-12 px-7 relative text-center bg-[#1F1F1F] text-white h-[445px]">
         <div class="container">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">About Me</h2>
-            <p class="max-w-[810px] mx-auto">I'm John Smith, a UI/UX designer dedicated to crafting intuitive and
-                visually stunning digital
-                experiences.
-                With a passion for user-centric design, I transform ideas into functional and beautiful interfaces.
-                Let's
-                collaborate and shape the future of design together.</p>
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-3 mt-8  justify-center items-center mb-24">
-                <div class="flex flex-col justify-center items-center">
-                    <span class="counter font-bold xl:text-[64px] md:text-4xl lg:text-5xl  py-4 text-[#FFD4D0] text-2xl"
-                        data-target="502">0</span>
-                    <h5 class="text-lg md:text-xl font-medium">Projects Done</h5>
-                </div>
-                <div class="flex flex-col justify-center items-center ">
-                    <span class="counter font-bold xl:text-[64px] md:text-4xl lg:text-5xl  py-4 text-[#FFD4D0] text-2xl"
-                        data-target="10" data-plus="true">0</span>
-                    <h5 class="text-lg md:text-xl font-medium">Years of Experience</h5>
-                </div>
-                <div class="flex flex-col justify-center items-center ">
-                    <span class="counter font-bold xl:text-[64px] md:text-4xl lg:text-5xl  py-4 text-[#FFD4D0] text-2xl"
-                        data-target="273" data-plus="true">0</span>
-                    <h5 class="text-lg md:text-xl font-medium">Clients Served</h5>
-                </div>
+            <div class="w-[810px] h-[150px] gap-[24px] mx-auto">
+                <h3 class="text-2xl leading-[150%] md:text-3xl lg:text-4xl font-bold mb-6 text-center">About Me</h3>
+                <p class="max-w-[810px] mx-auto leading-[150%] font-normal text-[16px]">I'm John Smith, a UI/UX designer
+                    dedicated to crafting intuitive and
+                    visually stunning digital
+                    experiences.
+                    With a passion for user-centric design, I transform ideas into functional and beautiful interfaces.
+                    Let's
+                    collaborate and shape the future of design together.</p>
             </div>
-            <div class="circle-2 bg-[#FC3314] w-[234px] h-[234px] rounded-full"></div>
-        </div>
-    </section>
-
-
-    <section id="services" class="md:py-16 py-12 px-7 text-center">
-        <div class="container">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold md:mb-6 mb-4 text-center">Services</h2>
-            <p class="para max-w-[810px] mx-auto">Explore my design services, from user interface and experience to
-                prototyping and testing. Let's craft exceptional digital experiences together.</p>
             <div
-                class="services__items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-8 md:mt-8 mt-4">
-                <div class="lg:mt-8 md:space-y-6 space-y-4 p-4  md:text-left text-center md:w-[274px] md:h-[241px]">
-                    <div class="flex  justify-center md:justify-start">
-                        <img src="../assets/icons/Vector.svg" alt="Design Icon" class="w-16 h-12">
-                    </div>
-                    <h4 class="font-bold text-lg">Design</h4>
-                    <p class="text-sm">I specialize in web development and design, creating visually appealing,
-                        user-friendly digital experiences.</p>
+                class="grid grid-cols-1 gap-[64px] sm:grid-cols-3  justify-center items-center pt-[32px] w-[1064px] h-[119px] mx-auto">
+                <div class="flex flex-col justify-center w-[312px] items-center">
+                    <span
+                        class="counter font-bold xl:text-[64px] md:text-4xl lg:text-5xl leading-[150%] text-[#FFD4D0] text-2xl"
+                        data-target="502">0</span>
+                    <h5 class="text-[16px] md:text-lg font-bold leading-[130%]">Projects Done</h5>
                 </div>
-                <div class="lg:mt-8 md:space-y-6 space-y-4 p-4 md:text-left text-center md:w-[274px] md:h-[241px]">
-                    <div class="flex justify-center md:justify-start">
-                        <img src="../assets/icons/Vector2.svg" alt="Design Icon" class="w-20 h-12">
-                    </div>
-                    <h4 class="font-bold text-lg">Branding</h4>
-                    <p class="text-sm">I'm a branding expert, crafting unique visual identities that tell your story and
-                        resonate with your audience.</p>
+                <div class="flex flex-col w-[312px]  justify-center items-center ">
+                    <span
+                        class="counter font-bold leading-[150%] xl:text-[64px] md:text-4xl lg:text-5xl   text-[#FFD4D0] text-2xl"
+                        data-target="10" data-plus="true">0</span>
+                    <h5 class="text-[16px] md:text-lg font-bold leading-[130%]">Years of Experience</h5>
                 </div>
-                <div class="lg:mt-8 md:space-y-6 space-y-4 p-4 md:text-left text-center md:w-[274px] md:h-[241px]">
-                    <div class="flex justify-center md:justify-start">
-                        <img src="../assets/icons/vector3.svg" alt="Design Icon" class="w-12 h-12">
-                    </div>
-                    <h4 class="font-bold text-lg">UX Research</h4>
-                    <p class="text-sm">"I specialize in user experience research, collaborating on web development, and
-                        ensuring user-friendly digital products.</p>
+                <div class="flex flex-col w-[312px]  justify-center items-center ">
+                    <span
+                        class="counter font-bold leading-[150%] xl:text-[64px] md:text-4xl lg:text-5xl   text-[#FFD4D0] text-2xl"
+                        data-target="273" data-plus="true">0</span>
+                    <h5 class="text-[16px] md:text-lg font-bold leading-[130%]">Clients Served</h5>
                 </div>
-                <div class="lg:mt-8 md:space-y-6 space-y-4 p-4 md:text-left text-center md:w-[274px] md:h-[241px]">
-                    <div class="flex justify-center md:justify-start">
-                        <img src="../assets/icons/task.svg" alt="Design Icon" class="w-12 h-12">
-                    </div>
-                    <h4 class="font-bold text-lg">Usability Testing</h4>
-                    <p class="text-sm">I perform usability testing and optimize designs websites based on real-user
-                        feedback for seamless interactions.</p>
-                </div>
-
             </div>
+            <div class="circle-2 absolute bg-[#FC3314] w-[234px] h-[234px] left-[41%]  rounded-full"></div>
         </div>
     </section>
 
 
-    <section id="portfolio">
-        <div class="md:pt-12 pt-10 h-[320px] bg-[#FFD4D0]  text-center">
-            <div class="px-7">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">My Portfolio</h2>
-                <p class="max-w-[810px] mx-auto">Explore my design services, from user interface and experience to
+    <section id="services" class="md:py-16 h-[527px] py-12 px-7 text-center">
+        <div class="container">
+            <div class="w-[399]px flex flex-col md:gap-[32px] gap-[24px]">
+                <div class="max-w-[810px] mx-auto">
+                    <h3 class="text-2xl  md:text-3xl lg:text-4xl font-bold leading-[150%]  md:mb-6 mb-4 text-center">
+                        Services</h3>
+                    <p class="para max-w-[810px] mx-auto text-[16px] font-normal leading-[150%]">Explore my design
+                        services, from user interface and experience to
+                        prototyping and testing. Let's craft exceptional digital experiences together.</p>
+                </div>
+                <div
+                    class="services__items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-8">
+
+
+
+                    <div class=" md:space-y-6 space-y-4 p-4  md:text-left text-center md:w-[274px] md:h-[241px]">
+                        <div class="flex  justify-center md:justify-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="54" viewBox="0 0 48 54"
+                                fill="none">
+                                <path
+                                    d="M23.9902 11.5605C24.1142 12.5318 24.2521 13.4415 24.4092 14.293C25.0726 17.8899 26.088 20.5771 27.8516 22.5527C29.6275 24.5422 32.0529 25.6895 35.2764 26.4355C36.1882 26.6466 37.1735 26.8254 38.2363 26.9844C37.1735 27.1434 36.1882 27.3241 35.2764 27.5352C32.053 28.2811 29.6275 29.4276 27.8516 31.417C26.0879 33.3927 25.0726 36.0807 24.4092 39.6777C24.2522 40.5287 24.1141 41.4376 23.9902 42.4082C23.8661 41.4374 23.7285 40.5279 23.5713 39.6768C22.9069 36.0798 21.891 33.3926 20.127 31.417C18.3506 29.4276 15.9248 28.2812 12.7012 27.5352C11.7889 27.3241 10.8036 27.1434 9.74023 26.9844C10.8035 26.8254 11.789 26.6466 12.7012 26.4355C15.9249 25.6895 18.3506 24.5421 20.127 22.5527C21.8909 20.5771 22.9069 17.8899 23.5713 14.293C23.7286 13.4415 23.866 12.5318 23.9902 11.5605Z"
+                                    stroke="#FC3314" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg leading-[130%]">Design</h4>
+                        <p class="text-sm font-normal leading-[150%]">I specialize in web development and design,
+                            creating visually appealing,
+                            user-friendly digital experiences.</p>
+                    </div>
+                    <div class=" md:space-y-6 space-y-4 p-4 md:text-left text-center md:w-[274px] md:h-[241px]">
+                        <div class="flex justify-center md:justify-start">
+                            <div class="inline-flex">
+                                <svg class="mt-[5px]" xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                                    viewBox="0 0 44 44" fill="none">
+                                    <circle cx="22" cy="22" r="21" stroke="#FC3314" stroke-width="2" />
+                                </svg>
+                                <svg class="mt-[5px] -ml-[22px]" xmlns="http://www.w3.org/2000/svg" width="44"
+                                    height="44" viewBox="0 0 44 44" fill="none">
+                                    <circle cx="22" cy="22" r="21" stroke="#FC3314" stroke-width="2" />
+                                </svg>
+                                <svg class="mt-[5px] -ml-[22px]" xmlns="http://www.w3.org/2000/svg" width="44"
+                                    height="44" viewBox="0 0 44 44" fill="none">
+                                    <circle cx="22" cy="22" r="21" stroke="#FC3314" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h4 class="font-bold pt-[5px] text-lg leading-[130%]">Branding</h4>
+                        <p class="text-sm font-normal leading-[150%]">I'm a branding expert, crafting unique visual
+                            identities that tell your story and
+                            resonate with your audience.</p>
+                    </div>
+                    <div class=" md:space-y-6 space-y-4 p-4 md:text-left text-center md:w-[274px] md:h-[241px]">
+                        <div class="flex justify-center md:justify-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54"
+                                fill="none">
+                                <path d="M31.5004 11.2504H45.0004" stroke="#FC3314" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M31.5004 18.0004H38.2504" stroke="#FC3314" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M47.2504 25.8754C47.2504 37.6879 37.6879 47.2504 25.8754 47.2504C14.0629 47.2504 4.50043 37.6879 4.50043 25.8754C4.50043 14.0629 14.0629 4.50037 25.8754 4.50037"
+                                    stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M49.5004 49.5004L45.0004 45.0004" stroke="#FC3314" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg leading-[130%]">UX Research</h4>
+                        <p class="text-sm font-normal leading-[150%]">"I specialize in user experience research,
+                            collaborating on web development, and
+                            ensuring user-friendly digital products.</p>
+                    </div>
+                    <div class=" md:space-y-6 space-y-4 p-4 md:text-left text-center md:w-[274px] md:h-[241px]">
+                        <div class="flex justify-center md:justify-start">
+                            <svg class="mt-[3px] ml-[3px]" xmlns="http://www.w3.org/2000/svg" width="49" height="48"
+                                viewBox="0 0 49 48" fill="none">
+                                <path d="M22.2222 39.1111H47.1111" stroke="#FC3314" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.2222 24.8889H47.1111" stroke="#FC3314" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.2222 10.6666H47.1111" stroke="#FC3314" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6 11L8 13L14 7" stroke="#FC3314" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 25L8 27L14 21" stroke="#FC3314" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 39L8 41L14 35" stroke="#FC3314" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg">Usability Testing</h4>
+                        <p class="text-sm font-normal leading-[150%]">I perform usability testing and optimize designs
+                            websites based on real-user
+                            feedback for seamless interactions.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="h-[940px]">
+        <div class="md:pt-[50px]  px-7 pt-10 pb-[142px] h-[317px] bg-[#FFD4D0]  text-center">
+            <div class="px-7 h-[125px]">
+                <h3 class="text-2xl  md:text-3xl lg:text-[35px] font-bold pb-[24px] text-center leading-[150%] ">My
+                    Portfolio</h3>
+                <p class="max-w-[810px] mx-auto text-[16px] font-normal leading-[150%]">Explore my design services, from
+                    user interface and experience to
                     prototyping and testing. Let's craft exceptional digital experiences together.</p>
             </div>
         </div>
-        <div class="container px-7">
+        <div class="container">
 
             <div
-                class="portfolio grid mt-[-172px]  md:py-16 py-12 sm:pb-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-16 gap-12">
-                <div class=" flex flex-col">
+                class="portfolio grid mt-[-163px] h-[658px] md:py-16 py-12 sm:pb-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-16 gap-12">
+                <div class=" flex flex-col w-[354px] h-[297px]">
                     <img src="../assets/port1.png" class="md:mb-8 mb-6" alt="">
-                    <h4 class="font-bold text-xl md:mb-4 mb-2">Educational Platform</h4>
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm">Web Design / Usability Testing</span>
-                        <a href="#"
-                            class="bg-[#FC3314] w-[37px] h-[37px] rounded-full flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                class="w-[23px] h-[23px] rotate-45">
-                                <path d="M5 12l7-7 7 7" />
-                                <path d="M12 19V5" />
-                            </svg>
-                        </a>
+
+                    <div class="flex justify-between h-[67px] w-full">
+                        <div class="flex flex-col md:gap-[16px] gap-2  text-start">
+                            <h4 class="font-bold text-xl leading-[150%] text-start">Educational Platform</h4>
+                            <span class="text-sm font-normal leading-[150%] text-start">Web Design / Usability
+                                Testing</span>
+                        </div>
+                        <div class="self-end">
+                            <a href="#"
+                                class="bg-[#FC3314] w-[37.67px] h-[37.67px] rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23"
+                                    fill="none">
+                                    <path d="M18.4253 3.49615L5.24219 16.6793" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18.4253 13.1669V3.49615H8.75454" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-col">
+                <div class="flex flex-col w-[354px] h-[297px]">
                     <img src="../assets/port2.png" class="md:mb-8 mb-6" alt="Travel App Design">
-                    <h4 class="font-bold text-xl md:mb-4 mb-2">Travel App Design</h4>
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm">UX Research / App Design</span>
-                        <a href="#"
-                            class="bg-[#FC3314] w-[37px] h-[37px] rounded-full flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                class="w-[23px] h-[23px] rotate-45">
-                                <path d="M5 12l7-7 7 7" />
-                                <path d="M12 19V5" />
-                            </svg>
-                        </a>
+                    <div class="flex justify-between h-[67px] w-full">
+                        <div class="flex flex-col md:gap-[16px] gap-2  text-start">
+                            <h4 class="font-bold text-xl leading-[150%] text-start">Travel App Desi gn</h4>
+                            <span class="text-sm font-normal leading-[150%] text-start">UX Research / App Design </span>
+                        </div>
+                        <div class="self-end">
+                            <a href="#"
+                                class="bg-[#FC3314] w-[37.67px] h-[37.67px] rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23"
+                                    fill="none">
+                                    <path d="M18.4253 3.49615L5.24219 16.6793" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18.4253 13.1669V3.49615H8.75454" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="flex flex-col">
+                <div class="flex flex-col w-[354px] h-[297px]">
                     <img src="../assets/port3.png" class="md:mb-8 mb-6" alt="">
-                    <h4 class="font-bold text-xl md:mb-4 mb-2">Personal Page</h4>
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm">Web Design</span>
-                        <a href="#"
-                            class="bg-[#FC3314] w-[37px] h-[37px] rounded-full flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                class="w-[23px] h-[23px] rotate-45">
-                                <path d="M5 12l7-7 7 7" />
-                                <path d="M12 19V5" />
-                            </svg>
-                        </a>
+                    <div class="flex justify-between h-[67px] w-full">
+                        <div class="flex flex-col md:gap-[16px] gap-2  text-start">
+                            <h4 class="font-bold text-xl leading-[150%] text-start">Personal Page</h4>
+                            <span class="text-sm font-normal leading-[150%] text-start">Web Design </span>
+                        </div>
+                        <div class="self-end">
+                            <a href="#"
+                                class="bg-[#FC3314] w-[37.67px] h-[37.67px] rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23"
+                                    fill="none">
+                                    <path d="M18.4253 3.49615L5.24219 16.6793" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18.4253 13.1669V3.49615H8.75454" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
-                <div class="flex flex-col">
+                <div class="flex flex-col w-[354px] h-[297px]">
                     <img src="../assets/port4.png" class="md:mb-8 mb-6" alt="">
-                    <h4 class="font-bold text-xl  md:mb-4 mb-2">Furniture Mobile App</h4>
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm">App Design</span>
-                        <a href="#"
-                            class="bg-[#FC3314] w-[37px] h-[37px] rounded-full flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                class="w-[23px] h-[23px] rotate-45">
-                                <path d="M5 12l7-7 7 7" />
-                                <path d="M12 19V5" />
-                            </svg>
-                        </a>
+                    <div class="flex justify-between h-[67px] w-full">
+                        <div class="flex flex-col md:gap-[16px] gap-2  text-start">
+                            <h4 class="font-bold text-xl leading-[150%] text-start">Furniture Mobile App</h4>
+                            <span class="text-sm font-normal leading-[150%] text-start">App Design</span>
+                        </div>
+                        <div class="self-end">
+                            <a href="#"
+                                class="bg-[#FC3314] w-[37.67px] h-[37.67px] rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23"
+                                    fill="none">
+                                    <path d="M18.4253 3.49615L5.24219 16.6793" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18.4253 13.1669V3.49615H8.75454" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-col">
+
+                <div class="flex flex-col w-[354px] h-[297px]">
                     <img src="../assets/port5.png" class="md:mb-8 mb-6" alt="">
-                    <h4 class="font-bold text-xl  md:mb-4 mb-2">Coffee House Landing Page</h4>
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm">UX Research / Web Design </span>
-                        <a href="#"
-                            class="bg-[#FC3314] w-[37px] h-[37px] rounded-full flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                class="w-[23px] h-[23px] rotate-45">
-                                <path d="M5 12l7-7 7 7" />
-                                <path d="M12 19V5" />
-                            </svg>
-                        </a>
+                    <div class="flex justify-between h-[67px] w-full">
+                        <div class="flex flex-col md:gap-[16px] gap-2  text-start">
+                            <h4 class="font-bold text-xl leading-[150%] text-start">Coffee House Landing Page</h4>
+                            <span class="text-sm font-normal leading-[150%] text-start">UX Research / Web Design </span>
+                        </div>
+                        <div class="self-end">
+                            <a href="#"
+                                class="bg-[#FC3314] w-[37.67px] h-[37.67px] rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23"
+                                    fill="none">
+                                    <path d="M18.4253 3.49615L5.24219 16.6793" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18.4253 13.1669V3.49615H8.75454" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
-                <div class="flex flex-col">
+                <div class="flex flex-col w-[354px] h-[297px]">
                     <img src="../assets/port6.png" class="md:mb-8 mb-6" alt="">
-                    <h4 class="font-bold text-xl  md:mb-4 mb-2">Home Services Page</h4>
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm">Web Design / Marketing</span>
-                        <a href="#"
-                            class="bg-[#FC3314] w-[37px] h-[37px] rounded-full flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                class="w-[23px] h-[23px] rotate-45">
-                                <path d="M5 12l7-7 7 7" />
-                                <path d="M12 19V5" />
-                            </svg>
-                        </a>
+                    <div class="flex justify-between h-[67px] w-full">
+                        <div class="flex flex-col md:gap-[16px] gap-2  text-start">
+                            <h4 class="font-bold text-xl leading-[150%] text-start">Home Services Page</h4>
+                            <span class="text-sm font-normal leading-[150%] text-start">Web Design / Marketing</span>
+                        </div>
+                        <div class="self-end">
+                            <a href="#"
+                                class="bg-[#FC3314] w-[37.67px] h-[37.67px] rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23"
+                                    fill="none">
+                                    <path d="M18.4253 3.49615L5.24219 16.6793" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18.4253 13.1669V3.49615H8.75454" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
+
             </div>
         </div>
 
     </section>
 
-
-    <section id="skills" class="lg:pb-[90px] md:pb-20 pb-18 lg:pt-[90px] md:pt-16 pt-10 px-7">
-        <div class="container mx-auto">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold md:mb-6 mb-4 text-center">Core Design
-                Skills</h2>
-            <p class="max-w-2xl mx-auto text-center text-gray-600">
-                I excel in essential design skills, creating visually stunning and functional digital experiences. From
-                UI design to UX research, my passion is to craft effective and memorable digital solutions.
-            </p>
-
-            <div class="md:mt-16 mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-[120px] gap-6">
-
-                <div class="space-y-[18px]">
-                    <div class="progress-container">
-                        <h5 class="font-bold text-lg mb-2">Interaction Design</h5>
-                        <div class="flex items-center gap-4">
-                            <div class="w-full bg-[#E1E1E1]  h-[5px]">
-                                <div class="progress-bar bg-black h-[5px]" data-progress="60"></div>
-                            </div>
-                            <span class="progress-text text-sm font-medium">0%</span>
-                        </div>
-                    </div>
-
-                    <div class="progress-container">
-                        <h5 class="font-bold text-lg mb-2">Usability Testing</h5>
-                        <div class="flex items-center gap-4">
-                            <div class="w-full bg-[#E1E1E1]  h-[5px]">
-                                <div class="progress-bar bg-black h-[5px] " data-progress="70"></div>
-                            </div>
-                            <span class="progress-text text-sm font-medium">0%</span>
-                        </div>
-                    </div>
-
-                    <div class="progress-container">
-                        <h5 class="font-bold text-lg mb-2">User Research</h5>
-                        <div class="flex items-center gap-4">
-                            <div class="w-full bg-[#E1E1E1] h-[5px]">
-                                <div class="progress-bar bg-black h-[5px]" data-progress="45"></div>
-                            </div>
-                            <span class="progress-text text-sm font-medium">0%</span>
-                        </div>
-                    </div>
-
-
+    <section id="skills" class="lg:pb-[90px]  md:pb-20 pb-18 lg:pt-[90px] md:pt-16 pt-10 px-7 overflow-hidden">
+        <div class="container">
+            <div class="w-[1064px] mx-auto ">
+                <div class="text-center">
+                    <h2 class="text-2xl  md:text-3xl lg:text-4xl font-bold leading-[150%]  md:mb-6 mb-4 text-center">
+                        Core
+                        Design
+                        Skills</h2>
+                    <p class=" max-w-[810px] mx-auto text-[16px] font-normal leading-[150%] text-gray-600">
+                        I excel in essential design skills, creating visually stunning and functional digital
+                        experiences.
+                        From
+                        UI design to UX research, my passion is to craft effective and memorable digital solutions.
+                    </p>
                 </div>
 
-                <!-- Right Column -->
-                <div class="space-y-[18px]">
-                    <div class="progress-container">
-                        <h5 class="font-bold text-lg mb-2">Interaction Design</h5>
-                        <div class="flex items-center gap-4">
-                            <div class="w-full bg-[#E1E1E1]  h-[5px]">
-                                <div class="progress-bar bg-black h-[5px]" data-progress="95"></div>
+                <div class="md:mt-16 mt-12 h-[184px] grid grid-cols-1 md:grid-cols-2 md:gap-[120px] gap-6">
+
+                    <div class="space-y-[8px] w-[472px]">
+                        <div class="progress-container">
+                            <div class=" h-[56px]">
+                                <h5 class="font-bold text-[16px] leading-[150%] mb-2">Interaction Design</h5>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full bg-[#E1E1E1]  h-[5px]">
+                                        <div class="progress-bar bg-black h-[5px]" data-progress="60"></div>
+                                    </div>
+                                    <span class="progress-text text-sm font-medium">0%</span>
+                                </div>
                             </div>
-                            <span class="progress-text text-sm font-medium">0%</span>
                         </div>
-                    </div>
-                    <div class="progress-container">
-                        <h5 class="font-bold text-lg mb-2">Interaction Design</h5>
-                        <div class="flex items-center gap-4">
-                            <div class="w-full bg-[#E1E1E1] h-[5px]">
-                                <div class="progress-bar bg-black h-[5px]" data-progress="80"></div>
+
+                        <div class="progress-container">
+                            <div class="h-[56px]">
+                                <h5 class="font-bold text-[16px] leading-[150%]  mb-2">Usability Testing</h5>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full bg-[#E1E1E1]  h-[5px]">
+                                        <div class="progress-bar bg-black h-[5px] " data-progress="70"></div>
+                                    </div>
+                                    <span class="progress-text text-sm font-medium">0%</span>
+                                </div>
                             </div>
-                            <span class="progress-text text-sm font-medium">0%</span>
                         </div>
-                    </div>
-                    <div class="progress-container">
-                        <h5 class="font-bold text-lg mb-2">Interaction Design</h5>
-                        <div class="flex items-center gap-4">
-                            <div class="w-full bg-[#E1E1E1]  h-[5px]">
-                                <div class="progress-bar bg-black h-[5px]" data-progress="50"></div>
+
+                        <div class="progress-container">
+                            <div class="h-[56px]">
+                                <h5 class="font-bold text-[16px] leading-[150%]  mb-2">User Research</h5>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full bg-[#E1E1E1] h-[5px]">
+                                        <div class="progress-bar bg-black h-[5px]" data-progress="45"></div>
+                                    </div>
+                                    <span class="progress-text text-sm font-medium">0%</span>
+                                </div>
                             </div>
-                            <span class="progress-text text-sm font-medium">0%</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="space-y-[8px] w-[472px]">
+                        <div class="progress-container">
+                            <div class="h-[56px]">
+                                <h5 class="font-bold text-[16px] leading-[150%]  mb-2">Figma</h5>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full bg-[#E1E1E1]  h-[5px]">
+                                        <div class="progress-bar bg-black h-[5px]" data-progress="95"></div>
+                                    </div>
+                                    <span class="progress-text text-sm font-medium">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="h-[56px]">
+                                <h5 class="font-bold text-[16px] leading-[150%]  mb-2">prototyping</h5>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full bg-[#E1E1E1] h-[5px]">
+                                        <div class="progress-bar bg-black h-[5px]" data-progress="80"></div>
+                                    </div>
+                                    <span class="progress-text text-sm font-medium">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="h-[56px]">
+                                <h5 class="font-bold text-[16px] leading-[150%]  mb-2">Information Architecture</h5>
+                                <div class="flex items-center gap-4 h-[24]px">
+                                    <div class="w-full bg-[#E1E1E1]  h-[5px]">
+                                        <div class="progress-bar bg-black h-[5px]" data-progress="50"></div>
+                                    </div>
+                                    <span class="progress-text text-sm font-medium">0%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -347,86 +475,110 @@
 
 
 
-    <section id="testimonials" class="bg-[#FFD4D0] px-7 pt-[90px] pb-16 overflow-hidden">
+    <section id="testimonials" class="bg-[#FFD4D0] h-[414px] px-7 pt-[90px] pb-16 overflow-hidden">
         <div class="container">
             <div class="circle-3  bg-[#FC3314] w-[122px] h-[122px] rounded-full"></div>
-            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">Testemonials
-            </h2>
-            <div class="testimonial-content text-center">
+            <div class="h-[260px]">
+                <h2 class="text-2xl  md:text-3xl lg:text-4xl font-bold leading-[150%] pb-[32px] text-center">
+                    Testemonials
+                </h2>
+                <div class="testimonial-content text-center">
 
-                <div class="testimonial-slide">
+                    <div class="testimonial-slide flex flex-col gap-[32px]">
 
-                    <p
-                        class="xl:max-w-[810px] lg:max-w-2xl md:max-w-xl sm:max-w-lg max-w-60 text-base md:text-lg mx-auto">
-                        Sara Jones's designs are both visually captivating and
-                        highly
-                        effective. She transformed our website, enhancing user engagement and conversions. Her attention
-                        to detail and creative approach are top-notch. Highly recommended!</p>
-                    <div class="flex flex-col md:flex-row md:mt-8 mt-6 justify-center items-center">
-                        <div class="logo  sm:mb-4"><img src="../assets/tesimonials-logo.png" alt="logo"
-                                class="w-20 sm:w-16 sm:mb-3"></div>
-                        <h4 class=" text-lg md:ml-4 ml-2"><span class="font-bold">John Smith</span>
-                        </h4>
-                        <h4 class=" text-lg md:ml-4 ml-2"> / CEO of XYZ Company</h4>
+                        <p
+                            class="xl:max-w-[768px] lg:max-w-2xl md:max-w-xl sm:max-w-lg max-w-60 text-[14px] md:text-[16px] leading-[150%] font-normal mx-auto">
+                            Sara Jones's designs are both visually captivating and
+                            highly
+                            effective. She transformed our website, enhancing user engagement and conversions. Her
+                            attention
+                            to detail and creative approach are top-notch. Highly recommended!</p>
+                        <div class="flex  mx-auto w-[368px] h-[70px] md:mt-8 mt-6 justify-center items-center">
+                            <div class="w-[70px] h-[70px]">
+                                <img src="../assets/tesimonials-logo.png" alt="logo"
+                                    class="w-[70px] h-[70px] object-contain">
+                            </div>
+
+                            <h4 class="text-[16px] font-normal leading-[150%] md:ml-4 ml-2"><span class="font-bold">John
+                                    Smith</span>
+                                / CEO of XYZ Company
+                            </h4>
+
+                        </div>
                     </div>
-                </div>
-                <div class="testimonial-slide">
-                    <p
-                        class="xl:max-w-[810px] lg:max-w-2xl md:max-w-xl sm:max-w-lg max-w-96 text-base md:text-lg mx-auto">
-                        Sara Jones's designs are both visually captivating and
-                        highly
-                        effective. She transformed our website, enhancing user engagement and conversions. Her attention
-                        to detail and creative approach are top-notch. Highly recommended!</p>
-                    <div class="flex flex-col md:flex-row md:mt-8 mt-6 justify-center items-center">
-                        <div class="logo sm:mb-4"><img src="../assets/tesimonials-logo.png" alt="logo"
-                                class="w-20 sm:w-16"></div>
-                        <h4 class=" text-lg md:ml-4 ml-2"><span class="font-bold">John Smith</span>
-                        </h4>
-                        <h4 class=" text-lg ml-4 sm:ml-2"> / CEO of XYZ Company</h4>
+                    <div class="testimonial-slide flex flex-col gap-[32px]">
+                        <p
+                            class="xl:max-w-[768px] lg:max-w-2xl md:max-w-xl sm:max-w-lg max-w-96 text-[14px] md:text-[16px] leading-[150%] font-normal mx-auto">
+                            Sara Jones's designs are both visually captivating and
+                            highly
+                            effective. She transformed our website, enhancing user engagement and conversions. Her
+                            attention
+                            to detail and creative approach are top-notch. Highly recommended!</p>
+                        <div class="flex  mx-auto w-[368px] h-[70px] md:mt-8 mt-6 justify-center items-center">
+                            <div class="w-[70px] h-[70px]">
+                                <img src="../assets/tesimonials-logo.png" alt="logo"
+                                    class="w-[70px] h-[70px] object-contain">
+                            </div>
+
+                            <h4 class="text-[16px] font-normal leading-[150%] md:ml-4 ml-2"><span class="font-bold">John
+                                    Smith</span>
+                                / CEO of XYZ Company
+                            </h4>
+
+                        </div>
                     </div>
-                </div>
-                <div class="testimonial-slide">
-                    <p
-                        class="xl:max-w-[810px] lg:max-w-2xl md:max-w-xl sm:max-w-lg max-w-96 text-base md:text-lg mx-auto">
-                        Sara Jones's designs are both visually captivating and
-                        highly
-                        effective. She transformed our website, enhancing user engagement and conversions. Her attention
-                        to detail and creative approach are top-notch. Highly recommended!</p>
-                    <div class="flex flex-col md:flex-row md:mt-8 mt-6 justify-center items-center">
-                        <div class="logo  sm:mb-4"><img src="../assets/tesimonials-logo.png" alt="logo"
-                                class="w-20 sm:w-16"></div>
-                        <h4 class=" text-lg md:ml-4 ml-2"><span class="font-bold">John Smith</span>
-                        </h4>
-                        <h4 class=" text-lg ml-4 sm:ml-2"> / CEO of XYZ Company</h4>
+                    <div class="testimonial-slide flex flex-col gap-[32px]">
+                        <p
+                            class="xl:max-w-[768px] lg:max-w-2xl md:max-w-xl sm:max-w-lg max-w-96 md:text-[16px] leading-[150%] font-normal text-[14px] mx-auto">
+                            Sara Jones's designs are both visually captivating and
+                            highly
+                            effective. She transformed our website, enhancing user engagement and conversions. Her
+                            attention
+                            to detail and creative approach are top-notch. Highly recommended!</p>
+                        <div class="flex  mx-auto w-[368px] h-[70px] md:mt-8 mt-6 justify-center items-center">
+                            <div class="w-[70px] h-[70px]">
+                                <img src="../assets/tesimonials-logo.png" alt="logo"
+                                    class="w-[70px] h-[70px] object-contain">
+                            </div>
+
+                            <h4 class="text-[16px] font-normal leading-[150%] md:ml-4 ml-2"><span class="font-bold">John
+                                    Smith</span>
+                                / CEO of XYZ Company
+                            </h4>
+
+                        </div>
                     </div>
+
+
+
                 </div>
-
-
-
             </div>
         </div>
     </section>
 
 
-    <section id="design" class="md:py-16 sm:py-12 py-8 bg-[#F7F7F7] px-7">
+    <section id="design" class="md:py-[90px] sm:py-12 py-8 bg-[#F7F7F7] px-7">
         <div class="container">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold md:mb-6 mb-4  text-center">Design Insights
-                and
-                Inspiration</h2>
-            <p class="max-w-[810px] mx-auto text-center">
-                Discover industry insights, expert tips, and design inspiration. Stay updated with the latest trends in
-                web design and user experience.
-            </p>
+            <div class="max-w-[799px]  mx-auto text-center">
+                <h2 class="text-2xl  md:text-3xl lg:text-4xl font-bold leading-[150%]    pb-[16px]  text-center">Design
+                    Insights
+                    and
+                    Inspiration</h2>
+                <p class="max-w-[799px] para mx-auto text-[16px] leading-[150%] font-normal">
+                    Discover industry insights, expert tips, and design inspiration. Stay updated with the latest trends
+                    in web design and user experience.
+                </p>
+            </div>
 
             <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-18 md:gap-12 gap-6 md:mt-12 mt-8 overflow-hidden">
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[92px] md:gap-12 gap-6 md:pt-12 pt-8 overflow-hidden">
 
                 <div class="flex flex-col  bg-white xl:w-[336px] w-auto h-auto xl:h-[426px] overflow-hidden">
-                    <img src="../assets/design1.png" class="mb-4 object-cover" alt="Travel App Design">
-                    <div class="flex flex-col flex-grow space-y-3  p-4">
-                        <span class="text-[12px] text-gray-500">August 15, 2023 / UX</span>
-                        <h4 class="font-bold text-[16px]">Typography Tips for Design Success</h4>
-                        <p class="text-sm text-gray-600">
+                    <img src="../assets/design1.png" class="pb-[16px] object-cover" alt="Travel App Design">
+                    <div class="flex flex-col flex-grow space-y-2  p-4">
+                        <span class="text-[12px] font-normal leading-[150%] text-gray-500">August 15, 2023 / UX</span>
+                        <h4 class="font-bold text-[16px] leading-[150%]">Typography Tips for Design Success</h4>
+                        <p class="text-sm text-gray-600 font-normal leading-[150%]">
                             Dive into the world of web typography and discover how to choose, pair, and optimize fonts
                             for compelling and readable digital designs.
                         </p>
@@ -445,11 +597,11 @@
                 </div>
 
                 <div class="flex flex-col  bg-white xl:w-[336px] w-auto h-auto xl:h-[426px]  overflow-hidden">
-                    <img src="../assets/design2.png" class="mb-4 object-cover" alt="Travel App Design">
-                    <div class="flex flex-col flex-grow space-y-3  p-4">
-                        <span class="text-[12px] text-gray-500">August 15, 2023 / UX</span>
-                        <h4 class="font-bold text-[16px]">Color Psychology in UX</h4>
-                        <p class="text-sm text-gray-600">
+                    <img src="../assets/design2.png" class="pb-[16px] object-cover" alt="Travel App Design">
+                    <div class="flex flex-col flex-grow space-y-2  p-4">
+                        <span class="text-[12px] text-gray-500 font-normal leading-[150%] ">August 15, 2023 / UX</span>
+                        <h4 class="font-bold text-[16px] leading-[150%]">Color Psychology in UX</h4>
+                        <p class="text-sm text-gray-600 font-normal leading-[150%]">
                             Explore how color choices impact user emotions and decision-making in UX design.
                         </p>
                         <div class="mt-auto">
@@ -467,11 +619,11 @@
                 </div>
 
                 <div class="flex flex-col bg-white xl:w-[336px] w-auto h-auto xl:h-[426px] overflow-hidden ">
-                    <img src="../assets/design3.png" class="mb-4 object-cover" alt="Travel App Design">
-                    <div class="flex flex-col flex-grow space-y-3 p-4">
-                        <span class="text-[12px] text-gray-500">August 15, 2023 / UX</span>
-                        <h4 class="font-bold text-[16px]">Boosting UX with Microinteractions</h4>
-                        <p class="text-sm text-gray-600">
+                    <img src="../assets/design3.png" class="pb-[16px] object-cover" alt="Travel App Design">
+                    <div class="flex flex-col flex-grow space-y-2 p-4">
+                        <span class="text-[12px] text-gray-500 font-normal leading-[150%] ">August 15, 2023 / UX</span>
+                        <h4 class="font-bold text-[16px] leading-[150%]">Boosting UX with Microinteractions</h4>
+                        <p class="text-sm text-gray-600 font-normal leading-[150%]">
                             Discover the power of microinteractions in enhancing user experience and engagement.
                         </p>
                         <div class="mt-auto">
@@ -493,15 +645,16 @@
     </section>
 
 
-    <section id="contact" class="xl:py- lg:py-24 md:py-18 sm:py-14 py-12 bg-[#FFD4D0] px-7">
+    <section id="contact" class="xl:py-[124px] lg:py-24 md:py-18 sm:py-14 py-12 bg-[#FFD4D0] px-7">
         <div class="container ">
             <div class="circle-4  bg-[#FC3314] w-[222px] h-[222px] rounded-full"></div>
-            <div class="flex flex-col lg:flex-row lg:gap-14 md:gap-12 gap-8">
+            <div class="flex flex-col lg:flex-row lg:gap-[60px] md:gap-12 gap-8">
                 <div class="w-full lg:w-1/2 h-auto lg:h-[467px]">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold md:mb-6 mb-4  ">Get in
+                    <h2 class="text-2xl  md:text-3xl lg:text-4xl font-bold leading-[150%] md:mb-[16px] mb-3  ">Get in
                         Touch
                     </h2>
-                    <p>Have a question or a project in mind? I'd love to hear from you. Let's chat and make something
+                    <p class="text-[16px] leading-[150%] font-normal">Have a question or a project in mind? I'd love to
+                        hear from you. Let's chat and make something
                         amazing together.</p>
                     <div class="lg:mt-16 md:mt-8 mt-6 lg:space-y-8 md:space-y-4 space-y-2">
                         <div class="flex items-center">
@@ -510,24 +663,25 @@
                                 <path
                                     d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24 11.05 11.05 0 003.47.56 1 1 0 011 1v3.21a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.21a1 1 0 011 1 11.05 11.05 0 00.56 3.47 1 1 0 01-.24 1.05z" />
                             </svg>
-                            <span class="ml-4">+1205 5872 321</span>
+                            <span class="ml-4 text-[16px] leading-[150%] font-normal">+1205 5872 321</span>
                         </div>
                         <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="black"
                                 viewBox="0 0 24 24" width="24" height="24">
                                 <path
                                     d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2v.01L12 12l8-5.99V6H4zm0 2.47V18h16V8.47l-8 6z" />
                             </svg>
-                            <span class="ml-4"> contact@sarajonesdesign.com</span>
+                            <span class="ml-5 text-[16px] leading-[150%] font-normal">contact@sarajonesdesign.com</span>
                         </div>
                         <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="black"
                                 viewBox="0 0 24 24" width="24" height="24">
                                 <path
                                     d="M12 2a7 7 0 00-7 7c0 5 7 12 7 12s7-7 7-12a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 112.5-2.5 2.5 2.5 0 01-2.5 2.5z" />
                             </svg>
-                            <span class="ml-4">1234 Design Street,Creativeville, Webland,Imaginary State, 98765</span>
+                            <span class="ml-4 text-[16px] leading-[150%] font-normal">1234 Design Street,Creativeville,
+                                Webland,Imaginary State, 98765</span>
                         </div>
                     </div>
-                    <div class="lg:pt-28 md:pt-8 pt-6">
+                    <div class="lg:pt-[119px] md:pt-8 pt-6">
                         <div class="flex gap-6">
 
                             <a href="#"
@@ -552,21 +706,25 @@
 
                 </div>
                 <div class="w-full lg:w-1/2 h-auto lg:h-[467px]">
-                    <div class="md:space-y-6 space-y-4 md:mb-8 mb-6">
-                        <input type="text" placeholder="First Name" class="w-full p-3 bg-white focus:outline-none">
+                    <div class="md:space-y-6 space-y-4 md:mb-[25px] mb-5">
+                        <input type="text" placeholder="First Name"
+                            class="w-full py-[14px] px-[16px] bg-white focus:outline-none text-[14px] leading-[150%] font-normal">
 
-                        <input type="email" placeholder="Email" class="w-full p-3 bg-white focus:outline-none">
+                        <input type="email" placeholder="Email"
+                            class="w-full py-[14px] px-[16px] bg-white focus:outline-none text-[14px] leading-[150%] font-normal">
 
-                        <input type="tel" placeholder="Phone Number" class="w-full p-3 bg-white focus:outline-none">
+                        <input type="tel" placeholder="Phone Number"
+                            class="w-full py-[14px] px-[16px] bg-white focus:outline-none text-[14px] leading-[150%] font-normal">
 
 
                         <textarea placeholder="Your Message" rows="4"
-                            class=" h-[168px] w-full p-3 bg-white focus:outline-none"></textarea>
+                            class=" h-[168px] w-full py-[13px] px-[16px] bg-white focus:outline-none text-[14px] leading-[150%] font-normal"></textarea>
 
 
 
                     </div>
-                    <button class="w-[233px] p-3 bg-[#1F1F1F] text-white font-bold ">Send
+                    <button type="submit"
+                        class="w-[233px] h-[48px] py-[12px] px-[56px] bg-[#1F1F1F] text-white font-bold text-[16px] leading-[150%]">Send
                         Message</button>
 
                 </div>
@@ -575,35 +733,61 @@
     </section>
 
 
-    <footer class="lg:py-20 md:py-16 sm:py-12 py-8 bg-[#1F1F1F] text-white px-7">
+    <footer class="lg:py-20 md:py-16 sm:py-12 py-8 bg-[#1F1F1F] text-white px-7 h-[359px]">
         <div class="container">
-            <div class="flex flex-col md:flex-row items-center mx-auto justify-center gap-6 md:gap-16">
-                <ul class="flex space-x-6  md:order-0 order-1">
-                    <li><a href="#" class="text-white font-bold text-lg md:text-xl">About</a></li>
-                    <li><a href="#" class="text-white font-bold text-lg md:text-xl">Services</a></li>
-                </ul>
-                <div class="logo">
-                    <a href="#"><img src="../assets/footerLogo.png" alt="logo"></a>
-                </div>
-                <ul class="flex space-x-6 ">
-                    <li><a href="#" class="text-white font-bold text-lg md:text-xl">Portfolio</a></li>
-                    <li><a href="#" class="text-white font-bold text-lg md:text-xl">Blog</a></li>
-                </ul>
-            </div>
-
-            <div class="md:mt-16 mt-8 flex flex-col items-center text-center">
-                <span class="text-[#FFF] text-base md:text-[16px]">Follow me on social media:</span>
-                <div class="flex md:mt-8 mt-6 gap-6">
-                    <a href="#"><img src="../assets/icons/Instagram.svg" alt=""
-                            class="icon h-8 w-8 transition-transform transform hover:scale-110 hover:brightness-125"></a>
-                    <a href="#"><img src="../assets/icons/Twitter.svg" alt=""
-                            class="icon h-8 w-8 transition-transform transform hover:scale-110 hover:brightness-125"></a>
-                    <a href="#"><img src="../assets/icons/Dribbble.svg" alt=""
-                            class="icon h-8 w-8 transition-transform transform hover:scale-110 hover:brightness-125"></a>
-                    <a href="#"> <img src="../assets/icons/Facebook.svg" alt=""
-                            class="icon h-8 w-8 transition-transform transform hover:scale-110 hover:brightness-125"></a>
+            <div class="w-[765px] h-[199px] mx-auto">
+                <div class="flex flex-col md:flex-row items-center mx-auto justify-center gap-6 md:gap-[120px]">
+                    <ul class="flex space-x-8  md:order-0 order-1   leading-[150%]">
+                        <li><a href="#about" class="text-white font-bold text-lg md:text-xl">About</a></li>
+                        <li><a href="#services" class="text-white font-bold text-lg md:text-xl">Services</a></li>
+                    </ul>
+                    <div class="logo">
+                        <a href="#"><img src="../assets/footerLogo.png" alt="logo"></a>
+                    </div>
+                    <ul class="flex space-x-8 ">
+                        <li><a href="#portfolio" class="text-white font-bold text-lg md:text-xl">Portfolio</a></li>
+                        <li><a href="#blog" class="text-white font-bold text-lg md:text-xl">Blog</a></li>
+                    </ul>
                 </div>
 
+                <div class="md:mt-16 mt-8 flex flex-col items-center text-center w-[216px] h-[81]px mx-auto">
+                    <span class="text-[#FFF] text-base md:text-[16px]">Follow me on social media:</span>
+                    <div class="flex md:mt-8 mt-6 gap-8 items-center  h-[25px]">
+                        <a href="#" class=" transition-transform transform hover:scale-110 hover:brightness-125">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <path
+                                    d="M12.3042 3.02016C15.4152 3.02016 15.804 3.02016 17.0679 3.11737C20.2761 3.21459 21.7344 4.77009 21.8316 7.88108C21.9288 9.14493 21.9288 9.43658 21.9288 12.5476C21.9288 15.6586 21.9288 16.0474 21.8316 17.2141C21.7344 20.3251 20.1789 21.8806 17.0679 21.9778C15.804 22.075 15.5124 22.075 12.3042 22.075C9.19317 22.075 8.8043 22.075 7.63768 21.9778C4.42946 21.8806 2.97118 20.3251 2.87397 17.2141C2.77675 15.9502 2.77675 15.6586 2.77675 12.5476C2.77675 9.43658 2.77675 9.04771 2.87397 7.88108C2.97118 4.77009 4.52668 3.21459 7.63768 3.11737C8.8043 3.02016 9.19317 3.02016 12.3042 3.02016ZM12.3042 0.881348C9.09595 0.881348 8.70708 0.881348 7.54046 0.978566C3.26284 1.173 0.929595 3.50625 0.735158 7.78387C0.637939 8.95049 0.637939 9.33936 0.637939 12.5476C0.637939 15.7558 0.637939 16.1447 0.735158 17.3113C0.929595 21.5889 3.26284 23.9221 7.54046 24.1166C8.70708 24.2138 9.09595 24.2138 12.3042 24.2138C15.5124 24.2138 15.9013 24.2138 17.0679 24.1166C21.3455 23.9221 23.6787 21.5889 23.8732 17.3113C23.9704 16.1447 23.9704 15.7558 23.9704 12.5476C23.9704 9.33936 23.9704 8.95049 23.8732 7.78387C23.6787 3.50625 21.3455 1.173 17.0679 0.978566C15.9013 0.881348 15.5124 0.881348 12.3042 0.881348ZM12.3042 6.52002C8.99874 6.52002 6.27662 9.24214 6.27662 12.5476C6.27662 15.853 8.99874 18.5751 12.3042 18.5751C15.6096 18.5751 18.3317 15.853 18.3317 12.5476C18.3317 9.24214 15.6096 6.52002 12.3042 6.52002ZM12.3042 16.4363C10.1654 16.4363 8.41542 14.6864 8.41542 12.5476C8.41542 10.4088 10.1654 8.65883 12.3042 8.65883C14.443 8.65883 16.1929 10.4088 16.1929 12.5476C16.1929 14.6864 14.443 16.4363 12.3042 16.4363ZM18.5262 4.96453C17.7484 4.96453 17.1651 5.54784 17.1651 6.32559C17.1651 7.10334 17.7484 7.68665 18.5262 7.68665C19.3039 7.68665 19.8872 7.10334 19.8872 6.32559C19.8872 5.54784 19.3039 4.96453 18.5262 4.96453Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="#" class=" transition-transform transform hover:scale-110 hover:brightness-125">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20"
+                                fill="none">
+                                <path
+                                    d="M8.30825 19.029C17.1133 19.029 21.9286 11.7341 21.9286 5.40867C21.9286 5.20141 21.9243 4.99521 21.9148 4.78981C22.8494 4.11417 23.662 3.27082 24.3029 2.31122C23.4452 2.6923 22.5222 2.94892 21.5538 3.06462C22.5421 2.47204 23.3011 1.53421 23.6591 0.416455C22.734 0.964983 21.7096 1.36357 20.6195 1.57853C19.7456 0.648127 18.5015 0.0661621 17.125 0.0661621C14.4811 0.0661621 12.3371 2.21012 12.3371 4.85271C12.3371 5.22848 12.3793 5.59363 12.4611 5.94419C8.48286 5.74436 4.95498 3.83925 2.59422 0.942957C2.18263 1.65018 1.94565 2.47231 1.94565 3.34884C1.94565 5.00954 2.79086 6.47573 4.07607 7.33369C3.29083 7.30954 2.55309 7.09352 1.90796 6.73474C1.9069 6.75464 1.9069 6.77481 1.9069 6.79577C1.9069 9.11434 3.55726 11.05 5.74739 11.4886C5.34535 11.5982 4.92234 11.6572 4.48554 11.6572C4.17717 11.6572 3.8773 11.6264 3.58566 11.5709C4.19495 13.4726 5.96234 14.8568 8.05773 14.8958C6.41905 16.1799 4.35497 16.945 2.1123 16.945C1.72618 16.945 1.34511 16.923 0.970398 16.8787C3.08888 18.2363 5.60435 19.029 8.30825 19.029Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="#" class="transition-transform transform hover:scale-110 hover:brightness-125">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <path
+                                    d="M11.9692 0.881348C5.55278 0.881348 0.302979 6.13115 0.302979 12.5476C0.302979 18.964 5.55278 24.2138 11.9692 24.2138C18.3856 24.2138 23.6354 18.964 23.6354 12.5476C23.6354 6.13115 18.3856 0.881348 11.9692 0.881348ZM21.5938 11.9643C19.0662 11.5754 16.8301 11.5754 14.6913 11.867C14.4969 11.2837 14.2052 10.7976 13.9136 10.2143C16.1496 9.24214 17.9968 7.88108 19.2606 6.22837C20.6217 7.88108 21.4966 9.82545 21.5938 11.9643ZM17.8023 4.96453C16.6357 6.52002 14.983 7.68665 12.9414 8.56161C11.9692 6.71446 10.8998 4.96453 9.63596 3.21459C10.4137 3.02016 11.1915 2.92294 11.9692 2.92294C14.2052 2.92294 16.2468 3.70069 17.8023 4.96453ZM7.59437 3.99234C8.85821 5.64506 10.0248 7.39499 10.997 9.24214C8.66377 9.92267 5.84444 10.2143 2.63622 10.3115C3.31675 7.49221 5.16391 5.25618 7.59437 3.99234ZM2.34457 12.5476V12.2559C6.03887 12.2559 9.34431 11.867 11.9692 10.9921C12.1636 11.4782 12.4553 11.9643 12.6497 12.3531C9.3443 13.4225 6.62218 15.4641 4.5806 18.6723C3.21954 17.0196 2.34457 14.8808 2.34457 12.5476ZM6.03887 20.1306C7.98324 17.1168 10.4137 15.1725 13.4275 14.2975C14.3025 16.6308 14.983 19.0612 15.3719 21.5889C12.1636 22.7555 8.66377 22.1722 6.03887 20.1306ZM17.3162 20.5195C16.9274 18.1863 16.2468 15.9502 15.4691 13.8114C17.3162 13.5198 19.2606 13.617 21.4966 14.0059C21.0105 16.728 19.5523 19.0612 17.3162 20.5195Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="#" class="transition-transform transform hover:scale-110 hover:brightness-125">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="27" viewBox="0 0 14 27"
+                                fill="none">
+                                <path
+                                    d="M3.81701 9.30533H0.635315V13.5476H3.81701V26.2744H9.11984V13.5476H12.9379L13.3621 9.30533H9.11984V7.50237C9.11984 6.54786 9.33196 6.12363 10.2865 6.12363H13.3621V0.820801H9.33196C5.51392 0.820801 3.81701 2.51771 3.81701 5.69941V9.30533Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </footer>
